@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+      <link rel="stylesheet" href="style.css">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+          
+
+
+  </head>
+  
+  <body>
+
+        <!-- Side navigation -->
+<div class="sidenav">
+  <a href="index.html">e.charlton<br> <br><br> <br><br> <br> </a>
+
+  <a href="soft fossils.html">soft fossils</a>
+  <a href="raw materials.html">raw materials</a>
+  <a href="dossier.html">dossier</a>
+  <a href="in-strata.html">in strata</a>
+  <a href="brief-infinite.html">brief infinite moments</a>
+  <a href="personal space.html">personal space</a>
+   <a href="video-essay.html">video essay</a>
+  <a href="commercial.html">commercial work</a>
+  
+
+</div>
+
+<div class="main">
+ 
+</div>
+
+    
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    
+    <img src="images/erin.jpeg" style="width:600px">
+    <div class="text">  <p> <mark>about</mark>  <br> <br><br> <br> 0.1 <br> <br> /e.charlton<br><br>
+
+Erin Charlton is a curious and methodical graphic designer with a strong commitment to social and environmental flourishing. <br> <br> She holds a Bachelor of Design from OCAD University and currently lives and works in Toronto/Tkaronto. She is fond of grocery store music and water lilies. </p>
+</div>
+</div>
+
+
+  
+
+
+
+</div>
+
+
+<script> let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}</script>
+    
+
+</body>
+</html>

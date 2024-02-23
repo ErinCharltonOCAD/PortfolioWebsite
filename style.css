@@ -1,0 +1,222 @@
+.title{
+    color: black;
+    font-size: 28px;
+    font-family:  'figtree', 'sans-serif';
+    font-weight: regular;
+    posiiton:sticky;
+    padding-right: 200px;
+    float:right;
+    text-decoration-color: black;
+}
+
+
+
+
+.fossil{
+    color: black;
+    font-size: 28px;
+    font-family:  'figtree', 'sans-serif';
+    font-weight: regular;
+    posiiton:absolute;
+    padding-left: 200px;
+}
+
+.text {
+  color: #000000;
+  font-size: 28px;
+  position: absolute;
+  top:-20px;
+  left:650px;
+  width: 400px;
+  text-align: left;
+  font-family:  'figtree', 'sans-serif';
+  text-decoration-color: black;
+
+}
+
+.text a:link {
+
+  text-colour:black;
+}
+
+.text a:visited {
+
+  text-colour:black;
+}
+
+mark {
+  background-color: #0FFF50;
+}
+
+}
+
+
+
+
+
+
+.video {
+
+}
+
+.about-image{
+
+   max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 175px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #FFFFFF; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10px;
+  font-size: 28px;
+  font-family:  'figtree', 'sans-serif';
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 28px;
+  color: black;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  background-color: #0FFF50
+}
+
+.sidenav a:active {
+background-color: #0FFF50
+
+}
+
+.sidenav a:focus {
+background-color: #0FFF50
+
+}
+
+
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/slideshow
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #0FFF50;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev2, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 400px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #0FFF50;
+  color:white;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #0FFF50;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+
+  .fossilimage {
+    height:700px;
+  }
+}
