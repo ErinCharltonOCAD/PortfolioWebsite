@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+  <head>
+      <link rel="stylesheet" href="style.css">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+          
+
+
+  </head>
+  
+  <body>
+
+        <!-- Side navigation -->
+<div class="sidenav">
+  
+  <a href="about.html">e.charlton<br> <br><br> <br><br> <br> </a>
+  <a href="index.html">soft fossils</a>
+  <a href="raw materials.html">raw materials</a>
+  <a href="dossier.html">dossier</a>
+  <a href="in-strata.html">in strata</a>
+  <a href="brief-infinite.html">brief, infinite moments</a>
+  <a href="personal-space.html">personal space</a>
+  <a href="commercial.html">commercial work</a>
+  
+
+</div>
+
+<div class="main">
+ 
+</div>
+
+    
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    
+    <img src="images/space1.jpg" style="width:600px">
+    <div class="text">  <p> <mark>personal space </mark>  <br> <br><br> <br> 0.1 <br> <br> /publication, research, <br> design systems <br><br>
+Personal Space is an archive of images that explores the concept of space as a social, physical, structural and psychological phenomenon. 
+ </p>
+</div>
+</div>
+
+  <div class="mySlides fade">
+    
+    <img src="images/space2.jpg" style="width:600px">
+    <div class="text">  <p> <mark>about</mark>  <br> <br><br> <br> 0.2 <br> <br> /publication, research, <br> design systems <br><br>
+This zine interacts with its subject through the design itself: the zine is organized by three distinct taxonomies. Exploring the zine through these systems encourages the reader to consider the dynamic ways that different types of spaces can be used and interpreted.
+ </p>
+</div>
+</div>
+
+
+  <div class="mySlides fade">
+    
+    <img src="images/space3.jpg" style="width:600px">
+    <div class="text">  <p> <mark>about</mark>  <br> <br><br> <br> 0.3 <br> <br> /publication, research, <br> design systems <br><br>
+The implications of architecture and access are highlighted through the directional heading and sub-heading system, while the binary iconographic system denotes each entry's status in adherence or defiance to structural norms. 
+ </p>
+</div>
+</div>
+
+  <div class="mySlides fade">
+    
+    <img src="images/space4.jpg" style="width:600px">
+    <div class="text">  <p> <mark>personal space </mark>  <br> <br><br> <br> 0.4 <br> <br> /publication, research, <br> design systems <br><br>
+
+ </p>
+</div>
+</div>
+
+  <div class="mySlides fade">
+    
+    <img src="images/space5.jpg" style="width:600px">
+    <div class="text">  <p> <mark>about</mark>  <br> <br><br> <br> 0.5 <br> <br> /publication, research, <br> design systems <br><br>
+
+ </p>
+</div>
+</div>
+
+
+  <div class="mySlides fade">
+    
+    <img src="images/space6.jpg" style="width:600px">
+    <div class="text">  <p> <mark>about</mark>  <br> <br><br> <br> 0.6 <br> <br> /publication, research, <br> design systems <br><br>
+
+ </p>
+</div>
+</div>
+
+  
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+
+</div>
+
+
+<script> let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}</script>
+    
+
+</body>
+</html>

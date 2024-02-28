@@ -52,7 +52,9 @@ mark {
 
 
 
-
+.w4w a:hover {
+ cursor: pointer;
+}
 
 
 .video {
