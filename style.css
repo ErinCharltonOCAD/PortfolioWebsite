@@ -1,6 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 .title{
     color: black;
-    font-size: 28px;
+    font-size: 3vw;
     font-family:  'figtree', 'sans-serif';
     font-weight: regular;
     posiiton:sticky;
@@ -23,15 +27,15 @@
 
 .text {
   color: #000000;
-  font-size: 28px;
+  font-size: 1.85vw;
   position: absolute;
   top:-20px;
-  left:650px;
-  width: 400px;
+  right: 0;
+  max-width: 40%;
   text-align: left;
   font-family:  'figtree', 'sans-serif';
   text-decoration-color: black;
-
+  max-height: 85vh;
 }
 
 .text a:link {
@@ -48,7 +52,7 @@ mark {
   background-color: #0FFF50;
 }
 
-}
+
 
 
 
@@ -72,24 +76,27 @@ mark {
 
 /* The sidebar menu */
 .sidenav {
-  height: 800px; /* Full-height: remove this if you want "auto" height */
-  width: 175px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
+  max-height: 90vh;
+  max-width: 12%; /* Set the width of the sidebar */
+  
+  float: left;
   top: 0; /* Stay at the top */
   left: 0;
   background-color: #FFFFFF; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: hidden;
   padding-top: 10px;
-  font-size: 28px;
+  
   font-family:  'figtree', 'sans-serif';
+  
+  margin-right: 10%;
 }
 
 /* The navigation menu links */
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 1.75vw;
   color: black;
   display: block;
 }
@@ -112,10 +119,7 @@ background-color: #0FFF50
 
 
 /* Style page content */
-.main {
-  margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
-}
+
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -124,19 +128,22 @@ background-color: #0FFF50
 }
 
 
-/slideshow
+/*slideshow
 
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-height: 90vh;
+  max-width: 66%;
   position: relative;
   margin: auto;
+  float: left;
 }
 
 /* Hide the images by default */
 .mySlides {
+  width: 100%;
   display: none;
 }
 
@@ -146,11 +153,11 @@ background-color: #0FFF50
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
-  padding: 16px;
+  
   color: #0FFF50;
   font-weight: bold;
   font-size: 18px;
+  max
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -173,8 +180,11 @@ background-color: #0FFF50
 
 /* Position the "next button" to the right */
 .next {
-  right: 400px;
+  right:50%;
   border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -193,6 +203,9 @@ background-color: #0FFF50
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+.dotBox {
+  max-width: 50%;
 }
 
 .active, .dot:hover {
@@ -218,7 +231,10 @@ background-color: #0FFF50
   from {opacity: .4}
   to {opacity: 1}
 
-  .fossilimage {
-    height:700px;
-  }
+  
+}
+
+img {
+  max-width: 50%;
+  height: auto;
 }
